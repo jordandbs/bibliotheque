@@ -30,7 +30,6 @@ class DatabaseClient {
   }
 
   Future<void> _onCreate(Database db, int version) async {
-    // Création de la table Auteur
     await db.execute('''
       CREATE TABLE AUTEUR(
         idAuteur INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -38,7 +37,6 @@ class DatabaseClient {
       )
     ''');
 
-    // Création de la table Livre
     await db.execute('''
       CREATE TABLE LIVRE(
         idLivre INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -48,3 +46,4 @@ class DatabaseClient {
       )
     ''');
   }
+}
