@@ -18,8 +18,7 @@ class LivreDatabase {
 
   Future<int> mettreAJourLivre(int idLivre, String nomLivre, int idAuteur) async {
     final db = await _dbClient.database;
-    return await db.update(
-      'LIVRE',
+    return await db.update('LIVRE',
       {'nomLivre': nomLivre, 'idAuteur': idAuteur},
       where: 'idLivre = ?',
       whereArgs: [idLivre],

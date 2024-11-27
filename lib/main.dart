@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
                 color: Colors.green,
               ),
               child: Text(
-                'Ajout de livres et d\'Auteurs',
+                'Menu',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
